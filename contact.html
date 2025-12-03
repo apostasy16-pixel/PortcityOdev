@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortCity İletişim</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        header { background: #0066cc; color: #fff; padding: 20px; text-align: center; }
+        nav { background: #0055aa; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { padding: 20px; }
+        form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.2); max-width: 500px; margin: 0 auto; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { padding: 10px 20px; background: #0066cc; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        h2 { color: #0066cc; }
+        footer { background: #0066cc; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+        .info { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PortCity İletişim</h1>
+        <p>Bizimle <b>iletişime geçin</b> veya <i>görüşlerinizi paylaşın</i>!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="about.html">Hakkında</a>
+        <a href="services.html">Aktiviteler</a>
+        <a href="contact.html">İletişim</a>
+        <a href="https://www.google.com/maps" target="_blank">Google Maps</a>
+    </nav>
+
+    <section>
+        <h2>İletişim Formu</h2>
+        <form>
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
+
+        <h2>Adres ve Bilgiler</h2>
+        <div class="info">
+            <p><b>Adres:</b> PortCity Marina, Sahil Yolu No:1, Şehir Merkezi</p>
+            <p><i>Telefon:</i> +90 123 456 78 90</p>
+            <p><u>E-posta:</u> info@portcity.com</p>
+        </div>
+
+        <h2>Harita</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.123456789!2d28.9784!3d41.0082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba123456789%3A0xabcdef123456789!2sPortCity!5e0!3m2!1str!2str!4v1234567890" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <footer>
+        © 2025 PortCity Projesi
+    </footer>
+</body>
+</html>
